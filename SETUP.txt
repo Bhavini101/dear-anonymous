@@ -1,0 +1,25 @@
+DEAR, ANONYMOUS — SETUP
+
+Your website is ready as a front-end design.
+
+The email address you gave me is:
+bhavini.loves@gmail.com
+
+IMPORTANT:
+The form currently does NOT send letters. HTML alone cannot safely deliver submissions to your email.
+
+To make the form actually work:
+1. Create an account with a form-handling service such as Formspree.
+2. Create a new form and set your destination email to your email address.
+3. The service will give you a form endpoint.
+4. Open index.html.
+5. Find:
+   <form id="letterForm" action="#" method="POST">
+6. Replace action="#" with the endpoint the service gives you.
+7. Upload the three files (index.html, style.css, script.js) to your website host.
+
+Privacy:
+- Do not publish submissions automatically.
+- Review every submission before using it as content.
+- Do not publish names, school names, phone numbers, usernames, addresses, photos, or other identifying information.
+- Do not ask for passwords or other sensitive information.
