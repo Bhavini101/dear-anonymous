@@ -34,6 +34,143 @@
           <h2>1. Write</h2>
           <p>Put your story into words. It can be short, long, funny, messy or heartfelt.</p>
         </div>
+
+        <div class="card">
+          <span>✉</span>
+          <h2>2. Send</h2>
+          <p>Your submission is sent privately for review. It isn't posted automatically.</p>
+        </div>
+
+        <div class="card">
+          <span>✦</span>
+          <h2>3. Maybe featured</h2>
+          <p>Selected stories may be turned into anonymous content, with identifying details left out.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="write" class="form-section">
+      <div class="paper">
+        <div class="form-heading">
+          <p class="tag">YOUR LETTER</p>
+          <h2>Dear, Anonymous... 💌</h2>
+          <p>Write it like you're telling a trusted friend.</p>
+        </div>
+
+        <form id="letterForm" action="https://formspree.io/f/xyeevpbe" method="POST">
+
+          <label>
+            What kind of story is it?
+            <select name="story_type" required>
+              <option value="" selected disabled>Choose one</option>
+              <option>First crush</option>
+              <option>Love / relationship</option>
+              <option>Situationship</option>
+              <option>Heartbreak</option>
+              <option>Friendship</option>
+              <option>Best high-school memory</option>
+              <option>Worst high-school moment</option>
+              <option>Something else</option>
+            </select>
+          </label>
+
+          <label>
+            Give your story a title <span>(optional)</span>
+            <input name="title" maxlength="100" placeholder="e.g. The one I never told">
+          </label>
+
+          <label>
+            Your story
+            <textarea name="story" maxlength="5000" rows="9" required
+              placeholder="Dear, Anonymous..."></textarea>
+          </label>
+
+          <div class="split">
+            <label>
+              Best moment <span>(optional)</span>
+              <textarea name="best_moment" maxlength="1200" rows="4"
+                placeholder="The part you still smile about..."></textarea>
+            </label>
+
+            <label>
+              Worst moment <span>(optional)</span>
+              <textarea name="worst_moment" maxlength="1200" rows="4"
+                placeholder="The part you wish you could forget..."></textarea>
+            </label>
+          </div>
+
+          <label>
+            What did you learn? <span>(optional)</span>
+            <textarea name="lesson" maxlength="1200" rows="4"
+              placeholder="What would you tell your younger self?"></textarea>
+          </label>
+
+          <label class="consent">
+            <input type="checkbox" required>
+            <span>
+              I won't include real names, phone numbers, usernames, school names,
+              addresses, photos, or other private information. I understand my
+              story may be considered for anonymous content.
+            </span>
+          </label>
+
+          <p class="note">
+            Please don't submit anything that could identify, embarrass, threaten,
+            or put another person at risk. Every story should be reviewed before
+            it is shared publicly.
+          </p>
+
+          <button class="button submit" type="submit">Send my letter ♡</button>
+          <p id="message" class="message"></p>
+
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div>Dear, Anonymous ♡</div>
+    <small>Real stories. No names. Just feelings.</small>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+          </html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dear, Anonymous 💌</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home">Dear, Anonymous <span>♡</span></a>
+    <a class="write-link" href="#write">Write a letter</a>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="bow">୨୧</div>
+      <p class="tag">A LITTLE PLACE FOR REAL STORIES</p>
+      <h1>Dear, Anonymous...</h1>
+      <p class="intro">
+        Tell me the story you never got to tell anyone.
+        A first crush, a heartbreak, a friendship, a beautiful memory,
+        an awkward moment — anything you want to get off your chest.
+      </p>
+      <a class="button" href="#write">Send your letter 💌</a>
+      <p class="tiny">No real names needed. Please keep yourself and others anonymous.</p>
+    </section>
+
+    <section class="how">
+      <p class="tag">HOW IT WORKS</p>
+      <div class="steps">
+        <div class="card">
+          <span>♡</span>
+          <h2>1. Write</h2>
+          <p>Put your story into words. It can be short, long, funny, messy or heartfelt.</p>
+        </div>
         <div class="card">
           <span>✉</span>
           <h2>2. Send</h2>
